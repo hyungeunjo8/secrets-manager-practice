@@ -7,3 +7,8 @@ spring:
     driver-class-name: org.h2.Driver
     username: ${h2.user}
     password: ${h2.password}
+  config:
+    import: aws-secretsmanager:/secret/hgjo/example
+aws:
+  secretsmanager:
+    region: ap-northeast-2

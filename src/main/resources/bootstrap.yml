@@ -1,4 +1,0 @@
-aws:
-  secretsmanager:
-    name: hgjo/example
-    region: ap-northeast-2
