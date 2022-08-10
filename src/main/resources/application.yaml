@@ -1,4 +1,13 @@
 spring:
+  cloud:
+    aws:
+      credentials:
+        profile:
+          name: sandbox
+      region:
+        static: ap-northeast-2
+      secretsmanager:
+        region: ap-northeast-2
   h2:
     console:
       enabled: true
@@ -9,6 +18,3 @@ spring:
     password: ${h2.password}
   config:
     import: aws-secretsmanager:/secret/hgjo/example
-aws:
-  secretsmanager:
-    region: ap-northeast-2
