@@ -17,7 +17,7 @@ spec:
       serviceAccountName: hgjo-service-account-eks-practice
       containers:
         - name: hgjo-msk-consume
-          image: 692609349536.dkr.ecr.ap-northeast-2.amazonaws.com/hgjo-msk-practice-consume:2022-08-11.01.59.54
+          image: 692609349536.dkr.ecr.ap-northeast-2.amazonaws.com/hgjo-msk-practice-consume:2022-08-11.01.55.43
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

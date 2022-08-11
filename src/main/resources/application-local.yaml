@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    aws:
+      credentials:
+        profile:
+          name: sandbox
+      region:
+        static: ap-northeast-2
+      secretsmanager:
+        region: ap-northeast-2
+  config:
+    import: aws-secretsmanager:/secret/hgjo/example
