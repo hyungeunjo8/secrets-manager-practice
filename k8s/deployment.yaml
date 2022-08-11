@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hgjo-msk-consume-deployment
+  labels:
+    app: hgjo-msk-consume
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hgjo-msk-consume
+  template:
+    metadata:
+      labels:
+        app: hgjo-msk-consume
+    spec:
+      serviceAccountName: hgjo-service-account-eks-practice
+      containers:
+        - name: hgjo-msk-consume
+          image: 692609349536.dkr.ecr.ap-northeast-2.amazonaws.com/hgjo-msk-practice-consume:2022-08-11.01.59.54
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              cpu: 2
+              memory: 4G
+            limits:
+              cpu: 2
+              memory: 4G
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: sandbox
