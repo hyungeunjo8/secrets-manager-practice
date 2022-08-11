@@ -17,4 +17,4 @@ spring:
     username: ${h2.user}
     password: ${h2.password}
   config:
-    import: aws-secretsmanager:/secret/hgjo/example
+    import: optional:aws-secretsmanager:/secret/hgjo/example
