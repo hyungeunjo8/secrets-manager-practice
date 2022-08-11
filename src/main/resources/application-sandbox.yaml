@@ -1,13 +1,13 @@
 spring:
-  cloud:
-    aws:
-      credentials:
-        profile:
-          name: default
-      region:
-        static: ap-northeast-2
-      secretsmanager:
-        region: ap-northeast-2
+#  cloud:
+#    aws:
+#      credentials:
+#        profile:
+#          name: default
+#      region:
+#        static: ap-northeast-2
+#      secretsmanager:
+#        region: ap-northeast-2
   h2:
     console:
       enabled: true
