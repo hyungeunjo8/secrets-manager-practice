@@ -5,5 +5,5 @@ spring:
   datasource:
     url: jdbc:h2:~/.h2/test
     driver-class-name: org.h2.Driver
-    username: ${h2.user}
-    password: ${h2.password}
+    username: ${key1}
+    password: ${key2}
