@@ -9,10 +9,10 @@ import javax.annotation.PostConstruct;
 @SpringBootApplication
 public class SecretsManagerPracticeApplication {
 
-	@Value("${h2.user}")
+	@Value("${key1}")
 	private String h2User;
 
-	@Value("${h2.password}")
+	@Value("${key2}")
 	private String h2Password;
 
 	@PostConstruct

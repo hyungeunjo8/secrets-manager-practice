@@ -9,4 +9,4 @@ spring:
       secretsmanager:
         region: ap-northeast-2
   config:
-    import: aws-secretsmanager:/secret/hgjo/example
+    import: aws-secretsmanager:hgjo-1-secretmanager
